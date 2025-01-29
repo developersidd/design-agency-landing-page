@@ -1,0 +1,26 @@
+@use "variables" as *;
+
+// media query
+
+//breakpoints up 
+@mixin breakpoint-up($size) { 
+  @if ($size) {
+  
+  @media screen  and (min-width: 
+  map-get($map: $breakpoints-up, $key: $size ))
+  {
+     @content;
+    
+    } 
+  } @else {
+    @error '`#{$key}` does not exist in the $breakpoints up';
+  } 
+}
+//breakpoints down 
+@mixin breakpoint-down($size) { 
+  @if ($size) {
+  @media screen  and (max-width: map-get($map: $breakpoints-down, $key: $size )){ @content; } 
+  } @else {
+    @error '`#{$key}` does not exist in the $breakpoints down';
+  }
+} 

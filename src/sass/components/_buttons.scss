@@ -1,0 +1,14 @@
+@use "../abstracts" as *;
+
+.button {
+  padding: 0.75em 1.5em;
+  color: var(--clr-text);
+  text-decoration: none;
+  background-color: var(--clr-primary);
+  border: 1px solid var(--clr-secondary);
+  border-radius: 0.5em;
+
+  &:hover {
+    background-color: var(--clr-secondary);
+  }
+}

@@ -1,0 +1,18 @@
+@use "../abstracts" as *;
+
+
+body {
+  font-family: 'Bingar', sans-serif;
+  //color: var(s--clr-text);
+  font-weight: 400;
+}
+
+h1, h4 {
+  font-family: 'Hagrid', sans-serif;
+  font-weight: 800; // Uses Hagrid-Text-Extrabold
+}
+
+p, h3, h5, li {
+  font-family: 'Bingar', sans-serif;
+  font-weight: 400; // Uses Hagrid-Regular
+}
