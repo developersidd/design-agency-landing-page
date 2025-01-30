@@ -2,16 +2,15 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html:focus-within {
   scroll-behavior: smooth;
 }
 
-body {
-  min-height: 100vh;
-  margin: 0;
-}
+
 
 input,
 button,
@@ -24,3 +23,8 @@ picture {
   max-width: 100%;
   display: block;
 }
+
+ul {
+  list-style-type: none;
+}
+

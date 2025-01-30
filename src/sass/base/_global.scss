@@ -5,8 +5,12 @@ body {
   font-family: 'Bingar', sans-serif;
   //color: var(s--clr-text);
   font-weight: 400;
+  border-top: 13px;
+  border-left: 0;
+  border-style: solid;
+  border-color: #fff;
 }
-
+  
 h1, h4 {
   font-family: 'Hagrid', sans-serif;
   font-weight: 800; // Uses Hagrid-Text-Extrabold

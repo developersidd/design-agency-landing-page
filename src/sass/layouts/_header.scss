@@ -1,0 +1,64 @@
+@use "../abstracts" as *;
+
+.header {
+    position: relative;
+    width: 100%;
+    background-color: var(--clr-blue);
+    color: #fff;
+
+&::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 6px;
+    width: 1513px;
+    height: 2px;
+    background-color: #fff;
+}
+
+    &__container {
+    }
+    
+    & .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__logo{
+            position: relative;
+            padding: 31.21px  48px  26px  62px;
+            &::after {
+                top: 0;
+                right: 0;
+                content: "";
+                position: absolute;
+                width: 2px;
+                height: 109px;
+                background-color: #fff;
+            }
+        }
+
+        &__logo img {
+            width: 85.017px;
+            height: 51.88px;
+
+        }
+
+        &__menu {
+            display: flex;
+            gap: 53px;
+            padding-right: 26px;
+            &__cart img{
+                   width: 20px;
+                   height: 21px; 
+            }
+            
+            &__bar img{
+                   width: 85px;
+                   height: 22px; 
+            }
+
+        }
+    }
+
+}
