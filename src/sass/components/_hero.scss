@@ -1,0 +1,188 @@
+.hero {
+  &__ribbon {
+    height: 120px;
+    --f: 0.5em;
+    position: absolute;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    line-height: 1.8;
+    display: flex;
+    align-items: center;
+
+    //  padding-inline: 10px;
+    //  padding-bottom: var(--f);
+
+    transform: translate(calc((1 - cos(45deg)) * 100%), -100%) rotate(40deg);
+    transform-origin: 28% 100%;
+    background-color: var(--clr-green);
+    overflow: hidden;
+    white-space: nowrap;
+
+    &__container {
+      display: inline-flex;
+      align-items: center;
+      gap: 25px;
+      animation: marquee 30s linear infinite; /* Adjust the duration as needed */
+    }
+
+    &__content {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+
+      & h1 {
+        color: #041c0c;
+        font-family: "Bingar";
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  // Hero Content
+  &__content {
+    background-color: var(--clr-blue);
+    padding: 0px 26px 25px 50px;
+
+    &__top {
+      display: flex;
+      align-items: last baseline;
+      margin-bottom: 10px;
+      & h1 {
+        color: #fff;
+        font-family: "Hagrid";
+        font-size: 140px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 140px;
+        margin-right: 10px;
+      }
+      & h4 {
+        color: #fff;
+
+        font-family: "Bingar";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+    }
+
+    &__left {
+      & img {
+        width: 775px;
+        height: 656px;
+        flex-shrink: 0;
+      }
+    }
+    &__wrapper {
+      display: flex;
+      align-items: start;
+      gap: 50px;
+    }
+    &__right {
+      &__top {
+        position: relative;
+        top: -50px;
+        left: -30%;
+        width: 100%;
+        display: flex;
+        align-items: last baseline;
+        justify-content: center;
+        gap: 60px;
+
+        & img {
+          width: 133px;
+          height: 130px;
+          flex-shrink: 0;
+        }
+
+        & h1 {
+          color: #fff;
+          font-family: "Hagrid";
+          font-size: 170px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;
+          text-transform: uppercase;
+        }
+        & p {
+          width: 459.091px;
+          flex-shrink: 0;
+          color: #adbcf0;
+          font-family: "Bingar";
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+      // Hero Content Right Middle -> Design text
+      &__middle {
+        margin-bottom: 30px;
+        margin-top: -70px;
+        & h1 {
+          color: #fff;
+          font-family: "Hagrid";
+          font-size: 170px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 160px;
+          text-transform: uppercase;
+          margin-bottom: 50px;
+        }
+        & h5 {
+          color: #fff;
+          text-align: center;
+          position: relative;
+          top: 0;
+          left: -15%;
+
+          font-family: "Bingar";
+          font-size: 35px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          text-transform: uppercase;
+        }
+      }
+      // Hero Content Right Bottom -> Images
+      &__images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        & h4 {
+          color: #fff;
+          font-family: "Bingar";
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: -2.2px;
+          text-transform: uppercase;
+        }
+        & img {
+          margin-top: 10px;
+          width: 133px;
+          height: 130px;
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

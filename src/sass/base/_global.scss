@@ -1,14 +1,18 @@
 @use "../abstracts" as *;
 
-
-body {
-  font-family: 'Bingar', sans-serif;
-  //color: var(s--clr-text);
-  font-weight: 400;
+html {
   border-top: 13px;
+  border-right: 13px;
   border-left: 0;
   border-style: solid;
   border-color: #fff;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Bingar', sans-serif;
+  font-weight: 400;
+
 }
   
 h1, h4 {
