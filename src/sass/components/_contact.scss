@@ -1,0 +1,87 @@
+//@use "../abstracts" as *;
+.contact {
+  background-color: var(--clr-green);
+  &__container {
+    padding: 50px 143px 200px 148px;
+  }
+
+  &__content {
+    &__headings {
+      &__top {
+        display: flex;
+        align-items: end;
+        margin-bottom: 60px;
+        gap: 60px;
+        & h1 {
+          color: var(--clr-green-olive);
+
+          font-family: "Hagrid";
+          font-size: 190px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 200px; /* 105.263% */
+          text-transform: uppercase;
+        }
+      }
+
+      &__middle {
+        display: flex;
+        align-items: start;
+        gap: 60px;
+        margin-left: 10%;
+        & h1 {
+          color: var(--clr-green-olive);
+          margin-top: -2%;
+          font-family: "Hagrid";
+          font-size: 210px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 180px;
+          text-transform: uppercase;
+        }
+        & img {
+          width: 343.029px;
+          height: 237.024px;
+          flex-shrink: 0;
+        }
+      }
+
+      &__bottom {
+        & h1 {
+          color: var(--clr-green-olive);
+
+          font-family: "Hagrid";
+          font-size: 220px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 200px; /* 90.909% */
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    &__email {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &__left {
+        margin-right: 30px;
+        width: 376.46px;
+        height: 376.037px;
+        flex-shrink: 0;
+        background-color: #fff;
+        border-radius: 200px;
+        position: relative;
+      }
+      &__right h3 {
+        
+        color: var(--clr-green-olive);
+        font-family: "Bingar";
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 90px; /* 128.571% */
+      }
+    }
+  }
+}

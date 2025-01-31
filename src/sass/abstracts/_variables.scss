@@ -1,14 +1,15 @@
 // breakpoints up
-$breakpoints-up: ("medium":"640px", "large":"1024px", "x-large":"1400px"); 
+$breakpoints-up: ("sm":"640px", "medium": "768", "large":"1024px", "x-large":"1280px", "2xl": "1536px"); 
 
 // breakpoints down
-$breakpoints-down: ("medium":"639px", "large":"1023px", "x-large":"1399px"); 
+$breakpoints-down: ("sm": "639px", "medium":"767px", "large":"1023px", "x-large":"1279px", "2xl": "1535px"); 
 
 // colors
 $colors: (
   "text": #fff,
   "green": #19EC60,
   "blue": #0C30AE,
-  "olive-black": #151C02  
+  "black-olive": #151C02,  
+  "green-olive": #041C0C
 );
 
